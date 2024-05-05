@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("AImental_health.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+        header {
+            background-color: goldenrod;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 12%;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .get-started-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .get-started-link:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: goldenrod;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mental Health Portal</h1>
+    </header>
+    <section>
+        <h2>Welcome to Our Mental Health Portal</h2>
+        <p>
+            Our mental health portal aims to provide support, resources, and information to help you manage your mental well-being.
+        </p>
+        <p>
+            Whether you're seeking counseling, looking for resources, or simply want to learn more about mental health, you've come to the right place.
+        </p>
+        <a href="register.php" class="get-started-link" id="getStartedButton">Get Started</a>
+
+<script>
+    // Get the button element
+    var getStartedButton = document.getElementById('getStartedButton');
+
+    // Add click event listener
+    getStartedButton.addEventListener('click', function() {
+        // Show alert message
+        alert('Welcome! Let\'s get started with our mental health portal.');
+    });
+</script>
+    </section>
+    <footer>
+        &copy; 2024 Mental Health Portal
+    </footer>
+</body>
+</html>
