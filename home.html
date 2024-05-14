@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mental Health Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("mental-health-awareness-month.jpg");
+    background-size: 100% 100%; /* Set background size to cover entire body */
+    background-position: center;
+    color: #333; /* Default text color */
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Added margin for spacing */
+    padding: 20px; /* Adjusted padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, #4CAF50, #2E8B57); /* Gradient background */
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 130px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Add font weight */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-icon img {
+    max-width: 100px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.carousel-inner {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #007bff;
+}
+
+.about {
+    padding: 100px 0;
+    background-color: #f9f9f9; /* Light gray background */
+    border-top: 1px solid #ccc; /* Gray border at the top */
+    border-bottom: 1px solid #ccc; /* Gray border at the bottom */
+}
+
+.about .container {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333; /* Dark gray text color */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #lemonchiffon; /* Gray text color */
+}
+
+
+/* CTA Section Styles */
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="logo.jpg" alt="Platform Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h1>Empowering Mental Wellness<br>Through Virtual Counseling</h1>
+        <a href="#signup" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+<section id="services" class="services" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h2>Our Services</h2>
+        <!-- Services Section -->
+<section id="services" class="services" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="service1-icon.png" alt="Service 1 Icon">
+                </div>
+                <h3 class="service-title">Virtual Counseling Sessions</h3>
+                <p class="service-description">Connect with experienced counselors from the comfort of your own home through secure and confidential video sessions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="service2-icon.png" alt="Service 2 Icon">
+                </div>
+                <h3 class="service-title">Personalized Treatment Plans</h3>
+                <p class="service-description">Receive customized treatment plans tailored to your unique needs and goals, designed to help you achieve long-term wellness.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="service3-icon.png" alt="Service 3 Icon">
+                </div>
+                <h3 class="service-title">Resources Library</h3>
+                <p class="service-description">Access a comprehensive library of resources including articles, exercises, and tools to support your mental health journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials" style="background-image: url('mental-health-awareness-month.jpg');">
+
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <p class="quote">"I've been using this platform for a few months now, and it has truly transformed my life. The counselors are incredibly supportive and understanding, and I always feel heard and valued."</p>
+                        <p class="client-name">- Rwema f.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <p class="quote">"I was hesitant to try virtual counseling at first, but I'm so glad I did. The convenience of being able to access therapy from the comfort of my own home has been a game-changer for me."</p>
+                        <p class="client-name">- Nsenga O.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="about" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h2>About Us</h2>
+<section id="about" class="about" style="background-image: url('mental-health-awareness-month.jpg');" >
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We are a dedicated team of mental health professionals committed to empowering individuals on their journey to better mental wellness. With a passion for helping others and a wealth of experience in counseling and therapy, our team is here to provide you with the support and guidance you need.</p>
+        <p>Our mission is to make quality mental health care accessible to everyone, regardless of their location or circumstances. We believe that everyone deserves to live a fulfilling and happy life, and we are here to help you achieve that.</p>
+        <p>Together, let's break the stigma surrounding mental health and create a world where seeking help is celebrated, not frowned upon. Join us in our mission to promote mental wellness and empower individuals to live their best lives.</p>
+    </div>
+</section>
+
+    </div>
+</section>
+
+<section id="signup" class="cta" style="background-image: url('mental-health-awareness-month.jpg');">
+    <div class="container">
+        <h2>Ready to Start Your Journey to Better Mental Health?</h2>
+        <a href="homepage.html" class="btn btn-secondary">click here</a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            
+        </ul>
+        <div class="social-icons">
+            <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all links with the class 'smooth-scroll'
+    var links = document.querySelectorAll('a.smooth-scroll');
+
+    // Iterate over each link
+    links.forEach(function (link) {
+        // Listen for click event
+        link.addEventListener('click', function (event) {
+            // Prevent default link behavior
+            event.preventDefault();
+
+            // Get the target element's ID from the href attribute
+            var targetId = this.getAttribute('href').substring(1);
+
+            // Get the target element
+            var targetElement = document.getElementById(targetId);
+
+            // Scroll smoothly to the target element
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

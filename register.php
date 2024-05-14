@@ -20,10 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert data into database
     $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
 
-    if (mysqli_query($conn, $sql)) {
-        echo "Registration successful!";
+    if ($conn->query($sql) === TRUE) {
+        // Redirect to login page after successful registration
+        header("Location: login.php");
+        exit();
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     mysqli_close($conn);
