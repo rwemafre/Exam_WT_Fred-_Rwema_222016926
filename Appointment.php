@@ -144,6 +144,7 @@ input[type="submit"]:hover {
             <h1>Welcome to our WellnessHub Platform</h1>
             <div class="links">
                 <a href="appointment.php">Appointments</a>
+                <a href="message_form.php">Message</a>
                 <a href="login.php">Logout</a>
             </div>
         </div>

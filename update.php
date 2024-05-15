@@ -3,6 +3,37 @@
 <head>
     <title>Update Appointment</title>
     <style>
+        .header {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header h1 {
+    margin: 0; 
+    font-size: 24px;
+}
+
+.header .links a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    transition: color 0.3s ease; 
+}
+
+.header .links a:hover {
+    color: #f8f9fa; 
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -75,8 +106,15 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <!-- Your header content here -->
+        <header class="header">
+        <div class="container">
+            <h1>Welcome to our WellnessHub Platform</h1>
+            <div class="links">
+                <a href="appointment.php">Appointments</a>
+                <a href="message_form.php">Message</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -106,8 +144,8 @@ if ($conn->connect_error) {
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
                     
-                    // Create a form with pre-filled values for update
                     echo "<form action='update_appointment_process.php' method='post'>
+                    <input type='hidden' name='appointment_id' value='".$row['appointment_id']."'>
                             <input type='hidden' name='appointment_id' value='".$row['appointment_id']."'>
                             <label>Counselor ID:</label><br>
                             <input type='text' name='counselor_id' value='".$row['counselor_id']."'><br>
