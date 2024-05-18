@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Mental Health Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <style type="text/css">
 body {
@@ -174,32 +175,71 @@ body {
 
 /* Footer Section Styles */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: auto;
+        }
 
-.footer-links li {
-    display: inline-block;
-    margin-right: 20px;
-}
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.footer-links li:last-child {
-    margin-right: 0;
-}
+        .footer-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-}
+        .footer-links li {
+            margin: 0 15px;
+        }
 
-.social-icons .social-icon {
-    display: inline-block;
-    margin-right: 10px;
-    color: #fff;
-    font-size: 24px;
-}
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f8f9fa;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #adb5bd;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+            }
+
+            .footer-links li {
+                margin: 10px 0;
+            }
+        }
 </style>
 </head>
 <body>
