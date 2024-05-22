@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Update Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .header {
     background-color: #007bff; 
@@ -96,12 +97,71 @@
             background-color: #0056b3;
         }
 
-        .footer {
-            background-color: navajowhite; 
-            color: #fff; 
-            padding: 20px 0;
+       footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
             text-align: center;
-            margin-top: auto; 
+            margin-top: auto;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links li {
+            margin: 0 15px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f8f9fa;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #adb5bd;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+            }
+
+            .footer-links li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -112,6 +172,9 @@
             <div class="links">
                 <a href="appointment.php">Appointments</a>
                 <a href="message_form.php">Message</a>
+                <a href="sessions.php">Book Session</a>
+                <a href="insert_assessment.php">Assessment</a>
+                <a href="insert_feedback.php">Feedback</a>
                 <a href="logout.php">Logout</a>
             </div>
         </div>
@@ -171,7 +234,31 @@ if ($conn->connect_error) {
     </div>
 
     <footer class="footer">
-        <!-- Your footer content here -->
-    </footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            
+        </ul>
+        <div class="social-icons">
+            <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</footer>
 </body>
 </html>

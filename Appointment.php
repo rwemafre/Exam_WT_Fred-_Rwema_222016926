@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -145,6 +146,9 @@ input[type="submit"]:hover {
             <div class="links">
                 <a href="appointment.php">Appointments</a>
                 <a href="message_form.php">Message</a>
+                <a href="sessions.php">Book Session</a>
+                <a href="insert_assessment.php">Assessment</a>
+                <a href="insert_feedback.php">Feedback</a>
                 <a href="login.php">Logout</a>
             </div>
         </div>
@@ -229,14 +233,32 @@ $conn->close();
     }
 });
 
-</script>
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
+            
+        </ul>
+        <div class="social-icons">
+            <!-- Footer Section -->
 <footer class="footer">
     <div class="container">
         <ul class="footer-links">
             <li><a href="terms_of_service.html">Terms of Service</a></li>
             <li><a href="Privacy.html">Privacy Policy</a></li>
         </ul>
-         </div>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
 </footer>
 </body>
 </html>
